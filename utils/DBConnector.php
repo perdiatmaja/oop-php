@@ -1,6 +1,7 @@
 <?php
 namespace DBConnector {
-    class DBConnector
+
+    class Connector
     {
         private $mysqliConnector;
 
@@ -11,7 +12,7 @@ namespace DBConnector {
              }
             $this->mysqliConnector = $mysqliConnector;
         }
-
+        
         public function getQueryList($tableName) {
             $query = SELECT_QUERY.$tableName;
             $result = mysqli_query($this->mysqliConnector, $query);
@@ -87,7 +88,7 @@ namespace DBConnector {
 
         public static function build()
         {
-            return new DBConnector(mysqli_connect(self::$host, self::$username, self::$password, self::$db));
+            return new Connector(mysqli_connect(self::$host, self::$username, self::$password, self::$db));
         }
     }
 }

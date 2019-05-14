@@ -12,6 +12,4 @@ namespace Constant {
     define("SELECT_QUERY", "SELECT * FROM ");
 
     define("INSERT_QUERY", "INSERT INTO ");
-
-    
 }

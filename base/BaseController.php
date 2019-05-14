@@ -1,7 +1,7 @@
 <?php
 use DBConnector\Builder;
-use Constant;
-use DBConnector\DBConnector;
+use \Constant;
+use DBConnector\Connector;
 
 class BaseController {
 

@@ -1,4 +1,6 @@
 <?php
+require_once "utils/IncludesFiles.php";
+
 use BaseController;
 
 class Main extends BaseController
